@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>NC River Basins</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+ integrity="sha512-
+puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrD
+h+drA=="
+ crossorigin=""/>
+ <script src = "NC-River-Basins/nc_river_points"></script>
+ <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+ integrity="sha512-
+QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw
+5lwrg=="
+ crossorigin=""></script>
+    </head>
+
+    <body>
+        <div id="mapid"></div>
+        <style>
+            #mapid{ width: 900px; height: 500px;}
+            </style>
+            <script>
+                var nc_river_points = L.map('mapid').setView([31.91, -81.05], 5); 
+                L.marker([35.911271, -79.049807]).addTo(CH)
+                 .bindPopup('Chapel Hill') // YOU CAN CHANGE THE MESSAGE
+                 .openPopup();
+                 L.geoJSON(nc_river_points).addTo(map)
+
+                </script>
+               
+    </body>
+<html>
