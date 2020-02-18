@@ -1,5 +1,5 @@
-var mymap = L.map('mapid').setView([-81.505, 35.00], 13);
-
+var mymap = L.map('mapid').setView([35.00, -81.00], 6);
+L.geoJSON(ncbasins).addTo(mymap);
 var geojsonFeature = {
     "type" : "FeatureCollection",
     "crs" : {
